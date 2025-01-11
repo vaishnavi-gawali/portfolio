@@ -80,7 +80,7 @@
     <div class="content">
         <h3>I'm Vaishnavi Avinash</h3>
         
-        <p style="font-size:20px">A data professional with over four years of experience in software engineering, data analysis, and project management. I specialize in building ETL pipelines and excel in extracting, cleaning, analyzing, and visualizing data to derive actionable insights. <br/> My expertise lies in delivering both technical and business solutions driven by data, effectively transforming requirements into production-ready outcomes. </p>
+        <p style="font-size:20px">A data professional with over four years of  in software engineering, data analysis, and project management. I specialize in building ETL pipelines and excel in extracting, cleaning, analyzing, and visualizing data to derive actionable insights. <br/> My expertise lies in delivering both technical and business solutions driven by data, effectively transforming requirements into production-ready outcomes. </p>
         
         <div class="box-container">
             <!-- <div class="box">
@@ -422,13 +422,11 @@
 
 <!-- projects section starts -->
 <!-- projects section starts -->
-<section class="work" id="projects">
+<!-- <section class="work" id="projects">
 
   <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
   
-  <div class="box-container"></div> <!-- This is where the projects will be populated -->
-
-
+  <div class="box-container"></div> 
 <div class="viewall">
   <a href="https://github.com/vaishnavi-gawali?tab=repositories" class="btn" target="_blank">
     <span>View All Projects</span>
@@ -437,7 +435,126 @@
 </div>
 
 
+</section> -->
+<section class="work" id="projects">
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+  
+  <div class="box-container">
+    <!-- Project Tile 1 -->
+    <div class="project-tile">
+      <img src="assets/images/projects/Amazon-Sales-Dashboard.png" alt="Project Image" class="project-image">
+      <h3 class="project-title">Student Dropout Prediction Using Machine Learning</h3>
+    </div>
+    
+    <!-- Project Tile 2 -->
+    <div class="project-tile">
+      <img src="assets/images/projects/Sales Dashboard.png" alt="Project Image" class="project-image">
+      <h3 class="project-title">IPL Analysis using Power BI</h3>
+    </div>
+    
+    <!-- Project Tile 3 -->
+    <div class="project-tile">
+      <img src="assets/images/projects/Covid-19 India.png" alt="Project Image" class="project-image">
+      <h3 class="project-title">Coffee Sales Analysis using Excel</h3>
+    </div>
+    
+    <!-- Project Tile 4 -->
+    <div class="project-tile">
+      <img src="assets/images/projects/Data-Science-Job-Salaries-Dashboard.png" alt="Project Image" class="project-image">
+      <h3 class="project-title">Analyzing Sales Data using Alteryx</h3>
+    </div>
+  </div>
+
+  <div class="viewall">
+    <a href="https://github.com/vaishnavi-gawali?tab=repositories" class="btn" target="_blank">
+      <span>View All Projects</span>
+      <i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
 </section>
+
+<style>
+  /* Specific styles for the #projects section */
+  #projects {
+    background-color: #0a043c; 
+    padding: 50px 60px 20px;
+    text-align: center;
+  }
+
+  #projects .heading {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+
+  #projects .heading span {
+    color: #fdda24; /* Highlighted yellow text */
+  }
+
+  #projects .box-container {
+    display: flex; /* Arrange tiles horizontally */
+    flex-wrap: wrap; /* Allow wrapping to the next line if necessary */
+    gap: 20px; /* Space between tiles */
+    justify-content: center; /* Center tiles within the container */
+  }
+
+  #projects .project-tile {
+    background-color: hwb(49 8% 16%); /* Dark background for tiles */
+    border: 1px solid #444;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 400px; /* Fixed width for consistent size */
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  #projects .project-tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  #projects .project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  #projects .project-title {
+    font-size: 2em;
+    color: #fff; /* White text for project title */
+    margin: 10px 0;
+  }
+
+  #projects .viewall {
+    margin-top: 30px;
+  }
+
+  #projects .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  #projects .btn:hover {
+    background-color: #ffc107;
+  }
+
+  #projects .btn i {
+    margin-left: 10px;
+  }
+</style>
+
+
 <!-- work project section ends -->
 
 
