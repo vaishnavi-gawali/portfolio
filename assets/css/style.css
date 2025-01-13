@@ -590,7 +590,7 @@ header .navbar ul li a:hover {
   object-fit: cover;
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 150px;
 }
 .education .box-container .box .content {
   position: relative;
