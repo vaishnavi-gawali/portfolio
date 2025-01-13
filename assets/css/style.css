@@ -274,53 +274,68 @@ header .navbar ul li a:hover {
 /* social icons start */
 .socials {
   position: relative;
-  margin-top: 9rem;
+  margin-top: 9rem; /* Adjusted margin for better positioning under 'About Me' button */
+  text-align: left; /* Center align the social icons */
 }
+
 .socials .social-icons {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap; /* Allow the items to wrap to the next row */
+  gap: 10px; /* Space between items */
 }
+
 .socials .social-icons li {
   display: inline-block;
-  margin-bottom: 14px;
 }
+
+.socials .first-row {
+  justify-content: flex-start;
+}
+
+.socials .second-row {
+  justify-content: flex-start;
+  margin-top: 10px; /* Adds space between rows */
+}
+
 .social-icons a {
-  font-size: 2rem;
-  display: inline-block;
-  line-height: 44px;
-  color: #00d9ff;
-  background-color: #09011b;
-  width: 44px;
-  height: 44px;
+  font-size: 1.9rem; /* Increased font size for better visibility */
+  font-weight: bold; /* Make the text bold */
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  padding: 12px 20px; /* Padding for proper sizing */
+  color: black;
+  background-color: transparent; /* Initial background is transparent */
   text-align: center;
+  width: 150px; /* Fixed width for uniformity */
+  height: 50px; /* Fixed height for uniformity */
   margin-right: 8px;
-  border-radius: 100%;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
+  border-radius: 25px; /* Circular edges */
+  border: 3px solid black; /* Bold border */
   transition: all 0.2s linear;
+  text-decoration: none; /* Remove underline */
 }
+
 .social-icons a:active,
 .social-icons a:focus,
 .social-icons a:hover {
-  color: #fff;
-  background-color: #0685da;
+  color: black;
+  background-color: orange; /* Hover background changes to orange */
+  border-color: orange; /* Border also turns orange */
 }
-.social-icons a.github:hover {
-  background-color: #0e0e0e;
+
+.social-icons a.github:hover,
+.social-icons a.linkedin:hover,
+.social-icons a.tableau:hover,
+.social-icons a.hackerrank:hover,
+.social-icons a.leetcode:hover,
+.social-icons a.medium:hover {
+  background-color: orange;
 }
-.social-icons a.twitter:hover {
-  background-color: #00aced;
-}
-.social-icons a.linkedin:hover {
-  background-color: #007bb6;
-}
-.social-icons a.dev:hover {
-  background-color: #070707;
-}
-.social-icons a.instagram:hover {
-  background-color: #ee00da;
-}
+
 /* social icons end */
 
 /* hero media queries starts*/
