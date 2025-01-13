@@ -44,57 +44,114 @@
 
 <!-- hero section starts -->
 <section class="home" id="home">
-  <!---  <div id="particles-js"></div> -->
-
+    <!---  <div id="particles-js"></div> -->
     <div class="content">
-    <h2>Hi There,<br/> I'm Vaishnavi Avinash <span>Gawali</span></h2>
-    <p>I'm <span class="typing-text"></span></p>
-    <a href="#about" class="btn"><span>About Me</span>
-      <i class="fas fa-arrow-circle-down"></i>
-    </a>
-    <div class="social-links">
-      <!-- First row: LinkedIn, GitHub, Tableau -->
-      <div class="row">
-        <a href="https://www.linkedin.com" target="_blank">LINKEDIN</a>
-        <a href="https://www.github.com" target="_blank">GITHUB</a>
-        <a href="https://public.tableau.com" target="_blank">TABLEAU</a>
-      </div>
-      
-      <!-- Second row: HackerRank, LeetCode, Medium -->
-      <div class="row">
-        <a href="https://www.hackerrank.com" target="_blank">HACKERRANK</a>
-        <a href="https://leetcode.com" target="_blank">LEETCODE</a>
-        <a href="https://medium.com" target="_blank">MEDIUM</a>
-      </div>
+        <h2>Hi There,<br/> I'm Vaishnavi Avinash <span>Gawali</span></h2>
+        <p>I'm <span class="typing-text"></span></p>
+        <a href="#about" class="btn"><span>About Me</span>
+            <i class="fas fa-arrow-circle-down"></i>
+        </a>
+
+        <div class="social-links">
+            <!-- First row: LinkedIn, GitHub, Tableau -->
+            <div class="row">
+                <a href="https://www.linkedin.com" target="_blank">LINKEDIN</a>
+                <a href="https://www.github.com" target="_blank">GITHUB</a>
+                <a href="https://public.tableau.com" target="_blank">TABLEAU</a>
+            </div>
+
+            <!-- Second row: HackerRank, LeetCode, Medium -->
+            <div class="row">
+                <a href="https://www.hackerrank.com" target="_blank">HACKERRANK</a>
+                <a href="https://leetcode.com" target="_blank">LEETCODE</a>
+                <a href="https://medium.com" target="_blank">MEDIUM</a>
+            </div>
+        </div>
     </div>
-    </div> 
-<div class="image">
-    <img draggable="false" class="tilt" src="./assets/images/profile_viz.gif" alt="">
-</div>
+
+    <div class="image">
+        <img draggable="false" class="tilt" src="./assets/images/profile_viz.gif" alt="">
+    </div>
 </section>
+
+<!-- CSS Styles -->
 <style>
+/* Overall hero section styling */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    position: relative;
+}
+
+.content {
+    width: 50%;
+}
+
+.image {
+    width: 40%;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Social links grid layout */
 .social-links {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links .row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px; /* Adds space between rows */
 }
 
 .social-links a {
-  background-color: black; /* Background is black initially */
-  color: orange; /* Text color orange */
-  padding: 15px 30px; /* Increase the padding for larger buttons */
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  font-family: Arial, sans-serif;
-  font-size: 18px; /* Increase font size for readability */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
-  border: 2px solid orange; /* Adding a border for better visibility */
+    background-color: transparent; /* Set background to transparent */
+    color: black; /* Set text color to black */
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin: 10px; /* Adds spacing between the buttons */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 2px solid orange; /* Border remains orange */
 }
 
 .social-links a:hover {
-  background-color: orange; /* Change background to orange on hover */
-  color: black; /* Change text to black on hover */
+    background-color: orange; /* Change background to orange on hover */
+    color: black; /* Set text to black on hover */
+}
+
+/* Additional padding and media queries for smaller screens */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .image {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .social-links .row {
+        flex-direction: column; /* Stack icons vertically on smaller screens */
+    }
+
+    .social-links a {
+        margin: 10px auto; /* Centers the icons */
+    }
 }
 </style>
 <!-- hero section ends -->
