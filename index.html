@@ -68,23 +68,26 @@
 <style>
 .social-links {
   display: flex;
-  justify-content: space-around; /* evenly spaces the icons */
+  justify-content: space-around;
   padding: 20px;
 }
 
 .social-links a {
-  background-color: #f7b500; /* Use the yellow button color */
-  color: black;
-  padding: 10px 20px;
+  background-color: black; /* Background is black initially */
+  color: orange; /* Text color orange */
+  padding: 15px 30px; /* Increase the padding for larger buttons */
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
   font-family: Arial, sans-serif;
+  font-size: 18px; /* Increase font size for readability */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
+  border: 2px solid orange; /* Adding a border for better visibility */
 }
 
 .social-links a:hover {
-  background-color: #000; /* Changes button color on hover */
-  color: #f7b500; /* Changes text color on hover */
+  background-color: orange; /* Change background to orange on hover */
+  color: black; /* Change text to black on hover */
 }
 </style>
 <!-- hero section ends -->
